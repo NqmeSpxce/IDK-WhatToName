@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Haven</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header>
+        <div class="logo">
+            <h1>Arcade Haven</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#piano">Piano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Arcade Haven</h2>
+                <p>Experience the nostalgia of classic arcade games with a modern twist</p>
+                <a href="#games" class="btn">Play Now</a>
+            </div>
+        </section>
+
+        <section id="games" class="games-section">
+            <h2>Our Games</h2>
+            <div class="games-grid">
+                <div class="game-card" data-game="tetris">
+                    <div class="game-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h3>Tetris</h3>
+                    <p>Stack and clear lines in this classic puzzle game</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="pacman">
+                    <div class="game-icon">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3>Pacman</h3>
+                    <p>Navigate mazes and avoid ghosts in this iconic arcade game</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="2048">
+                    <div class="game-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>2048</h3>
+                    <p>Combine tiles to reach the elusive 2048 tile</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="tictactoe">
+                    <div class="game-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>Tic Tac Toe</h3>
+                    <p>Challenge our AI in this classic game of X's and O's</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="mario">
+                    <div class="game-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Super Mario</h3>
+                    <p>Jump and run in this platformer adventure</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="flappybird">
+                    <div class="game-icon">
+                        <i class="fas fa-dove"></i>
+                    </div>
+                    <h3>Flappy Bird</h3>
+                    <p>Navigate through pipes in this addictive game</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="snake">
+                    <div class="game-icon">
+                        <i class="fas fa-dragon"></i>
+                    </div>
+                    <h3>Snake</h3>
+                    <p>Grow your snake by eating food without hitting walls or yourself</p>
+                    <button class="play-btn">Play</button>
+                </div>
+                
+                <div class="game-card" data-game="breakout">
+                    <div class="game-icon">
+                        <i class="fas fa-table-tennis"></i>
+                    </div>
+                    <h3>Breakout</h3>
+                    <p>Break all the bricks with a bouncing ball</p>
+                    <button class="play-btn">Play</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Arcade Haven</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Arcade Haven is a modern web-based gaming platform that brings classic arcade games to your browser. Our mission is to provide a nostalgic gaming experience with a modern twist.</p>
+                    <p>All games are built using vanilla HTML, CSS, and JavaScript without any external libraries or frameworks, making them lightweight and fast.</p>
+                    <p>We're constantly working on adding new games and features to enhance your gaming experience. Stay tuned for updates!</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-moon"></i>
+                            <h3>Dark Mode</h3>
+                            <p>Easy on the eyes with our purple-themed dark mode interface</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h3>Mobile Friendly</h3>
+                            <p>Play on any device with responsive design and touch controls</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <h3>No Installation</h3>
+                            <p>Play directly in your browser without downloading anything</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="piano" class="piano-section">
+            <h2>Virtual Piano</h2>
+            <div class="piano-container">
+                <div class="piano-description">
+                    <p>Play some tunes on our virtual piano! Click the keys or use your keyboard to create music.</p>
+                    <div class="piano-controls">
+                        <div class="volume-control">
+                            <label for="volume">Volume: </label>
+                            <input type="range" min="0" max="1" step="0.1" value="0.5" id="volume">
+                        </div>
+                        <div class="instrument-select">
+                            <label for="instrument">Instrument: </label>
+                            <select id="instrument">
+                                <option value="piano">Piano</option>
+                                <option value="synth">Synth</option>
+                                <option value="guitar">Guitar</option>
+                                <option value="xylophone">Xylophone</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="piano-keyboard">
+                    <div class="white-key" data-note="C4"><span>A</span></div>
+                    <div class="black-key" data-note="C#4"><span>W</span></div>
+                    <div class="white-key" data-note="D4"><span>S</span></div>
+                    <div class="black-key" data-note="D#4"><span>E</span></div>
+                    <div class="white-key" data-note="E4"><span>D</span></div>
+                    <div class="white-key" data-note="F4"><span>F</span></div>
+                    <div class="black-key" data-note="F#4"><span>T</span></div>
+                    <div class="white-key" data-note="G4"><span>G</span></div>
+                    <div class="black-key" data-note="G#4"><span>Y</span></div>
+                    <div class="white-key" data-note="A4"><span>H</span></div>
+                    <div class="black-key" data-note="A#4"><span>U</span></div>
+                    <div class="white-key" data-note="B4"><span>J</span></div>
+                    <div class="white-key" data-note="C5"><span>K</span></div>
+                    <div class="black-key" data-note="C#5"><span>O</span></div>
+                    <div class="white-key" data-note="D5"><span>L</span></div>
+                    <div class="black-key" data-note="D#5"><span>P</span></div>
+                    <div class="white-key" data-note="E5"><span>;</span></div>
+                </div>
+                <div class="keyboard-guide">
+                    <p>Use your keyboard keys to play: A, S, D, F, G, H, J, K, L, ;</p>
+                    <p>For black keys: W, E, T, Y, U, O, P</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="game-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Game Title</h2>
+            <div id="game-container"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Arcade Haven. All rights reserved.</p>
+            <div class="theme-toggle-container">
+                <div class="theme-label">Theme</div>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-toggle-checkbox" class="theme-toggle-checkbox">
+                    <label for="theme-toggle-checkbox" class="theme-toggle-label">
+                        <div class="toggle-background">
+                            <div class="toggle-icons">
+                                <div class="sun-icon">
+                                    <i class="fas fa-sun"></i>
+                                    <span class="cloud cloud-1"></span>
+                                    <span class="cloud cloud-2"></span>
+                                </div>
+                                <div class="moon-icon">
+                                    <i class="fas fa-moon"></i>
+                                    <span class="star star-1"></span>
+                                    <span class="star star-2"></span>
+                                    <span class="star star-3"></span>
+                                </div>
+                            </div>
+                            <div class="toggle-circle"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/games/tetris.js"></script>
+    <script src="js/games/2048.js"></script>
+    <script src="js/games/tictactoe.js"></script>
+    <script src="js/games/snake.js"></script>
+    <script src="js/piano.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 
